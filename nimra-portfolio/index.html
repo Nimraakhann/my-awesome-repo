@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#06070b" />
+  <meta name="description" content="Nimra Khan — immersive 3D software engineering, QA and AI portfolio." />
+  <title>Nimra Khan — Interactive Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div id="boot" class="boot" aria-live="polite">
+    <div class="boot__brand">NK//PORTFOLIO</div>
+    <div class="boot__bar"><span id="bootBar"></span></div>
+    <div class="boot__copy" id="bootCopy">Initializing environment…</div>
+  </div>
+
+  <canvas id="world" aria-label="Interactive 3D portfolio world"></canvas>
+
+  <header class="hud">
+    <a class="mark" href="#intro" aria-label="Back to beginning"><span>N</span><span>K</span></a>
+    <nav class="hud__nav" aria-label="Portfolio chapters">
+      <button class="hud__dot is-active" data-chapter="0"><span>01</span><b>Origin</b></button>
+      <button class="hud__dot" data-chapter="1"><span>02</span><b>Foundation</b></button>
+      <button class="hud__dot" data-chapter="2"><span>03</span><b>QA Lab</b></button>
+      <button class="hud__dot" data-chapter="3"><span>04</span><b>Vision</b></button>
+      <button class="hud__dot" data-chapter="4"><span>05</span><b>Builds</b></button>
+      <button class="hud__dot" data-chapter="5"><span>06</span><b>Contact</b></button>
+    </nav>
+    <button id="soundToggle" class="icon-btn" type="button" aria-pressed="false" title="Ambient sound">◌</button>
+  </header>
+
+  <main id="story">
+    <section id="intro" class="chapter chapter--hero" data-chapter="0">
+      <div class="chapter__content hero-copy">
+        <p class="eyebrow">SOFTWARE ENGINEER · QA · AI/ML</p>
+        <h1>Nimra Khan</h1>
+        <p class="lede">I turn messy systems into experiences people can trust — by testing, building and teaching machines to see.</p>
+        <div class="hero-actions">
+          <button class="primary" data-go="1">Enter my story <span>↘</span></button>
+          <button class="ghost" data-open="resume">View quick résumé</button>
+        </div>
+        <div class="scroll-note"><span></span>Scroll to travel</div>
+      </div>
+      <aside class="chapter__meta">
+        <span>ISLAMABAD, PK</span>
+        <span>AVAILABLE FOR QA · SOFTWARE · AI</span>
+      </aside>
+    </section>
+
+    <section class="chapter" data-chapter="1">
+      <div class="chapter__content">
+        <p class="eyebrow">01 — FOUNDATION</p>
+        <h2>Engineering first.<br/>Curiosity always.</h2>
+        <p class="body-copy">My path started in software engineering and quickly expanded into computer vision, product thinking and quality engineering. I like understanding how a system behaves, where it breaks, and what would make it feel effortless to the person using it.</p>
+        <div class="facts">
+          <button class="fact" data-panel="education"><span>BS Software Engineering</span><strong>3.89 CGPA</strong></button>
+          <button class="fact" data-panel="fyp"><span>Final Year Project</span><strong>Retail Vista</strong></button>
+          <button class="fact" data-panel="award"><span>Open House</span><strong>2nd Place</strong></button>
+        </div>
+      </div>
+      <p class="scene-hint">Drag to look around · select glowing nodes</p>
+    </section>
+
+    <section class="chapter" data-chapter="2">
+      <div class="chapter__content chapter__content--right">
+        <p class="eyebrow">02 — QUALITY ENGINEERING</p>
+        <h2>I don’t just click through screens.<br/>I follow the system.</h2>
+        <p class="body-copy">My QA work spans mobile, web, accessibility, functional flows and regression thinking. I approach bugs as evidence: reproduce, isolate, document, prioritize and verify.</p>
+        <div class="tag-row">
+          <span>Manual QA</span><span>Playwright</span><span>API Thinking</span><span>WCAG</span><span>Regression</span>
+        </div>
+        <button class="primary" data-panel="qa">Open QA case file <span>＋</span></button>
+      </div>
+    </section>
+
+    <section class="chapter" data-chapter="3">
+      <div class="chapter__content">
+        <p class="eyebrow">03 — COMPUTER VISION</p>
+        <h2>Then I taught<br/>software to see.</h2>
+        <p class="body-copy">Retail Vista combined shoplifting detection, people counting, age/gender estimation, alerts and analytics in one smart-retail platform. It became the project where software engineering, ML and product design finally clicked together.</p>
+        <div class="metric-grid">
+          <div><strong>0.896</strong><span>mAP@50</span></div>
+          <div><strong>0.837</strong><span>mAP@50–95</span></div>
+          <div><strong>0.863</strong><span>Precision</span></div>
+          <div><strong>0.840</strong><span>Recall</span></div>
+        </div>
+        <button class="ghost" data-panel="retail">Inspect Retail Vista</button>
+      </div>
+    </section>
+
+    <section class="chapter" data-chapter="4">
+      <div class="chapter__content chapter__content--right">
+        <p class="eyebrow">04 — BUILDING</p>
+        <h2>Projects are where<br/>the disciplines meet.</h2>
+        <p class="body-copy">I build, test, refine and ship. Explore the constellation — each orbit is a different kind of work.</p>
+        <div class="project-list">
+          <button data-project="retail"><span>01</span><b>Retail Vista</b><em>Computer Vision / Product</em></button>
+          <button data-project="qa"><span>02</span><b>QA Systems</b><em>Testing / Automation</em></button>
+          <button data-project="web"><span>03</span><b>Client Builds</b><em>Web / SEO / Product</em></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter chapter--final" data-chapter="5">
+      <div class="chapter__content final-copy">
+        <p class="eyebrow">05 — NEXT</p>
+        <h2>Let’s build something<br/>that deserves to work.</h2>
+        <p class="body-copy">I’m interested in thoughtful QA, software engineering and AI-focused roles where product quality and technical depth both matter.</p>
+        <div class="contact-grid">
+          <a href="mailto:YOUR_EMAIL_HERE">Email <span>↗</span></a>
+          <a href="YOUR_LINKEDIN_HERE" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
+          <a href="YOUR_GITHUB_HERE" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+          <button data-open="resume">Quick résumé <span>↗</span></button>
+        </div>
+        <p class="fine">Built as an interactive 3D story — with a lightweight fallback for smaller devices and reduced motion.</p>
+      </div>
+    </section>
+  </main>
+
+  <div id="chapterLabel" class="chapter-label"><span>01</span><b>Origin</b></div>
+  <div id="progress" class="progress"><span></span></div>
+
+  <div id="cursor" class="cursor" aria-hidden="true"><span></span></div>
+
+  <dialog id="panel" class="panel">
+    <button id="panelClose" class="panel__close" aria-label="Close">×</button>
+    <div id="panelInner"></div>
+  </dialog>
+
+  <dialog id="resume" class="panel panel--resume">
+    <button id="resumeClose" class="panel__close" aria-label="Close">×</button>
+    <div class="resume-sheet">
+      <div class="resume-head">
+        <div><p class="eyebrow">QUICK RÉSUMÉ</p><h3>Nimra Khan</h3></div>
+        <span>Software Engineer · QA · AI/ML</span>
+      </div>
+      <div class="resume-cols">
+        <div>
+          <h4>Experience</h4>
+          <article><b>QA Engineer · CitrusBits</b><span>Mobile / Web QA · accessibility · regression</span></article>
+          <article><b>ML Intern · Codic Solution</b><span>Computer vision · YOLO-based detection</span></article>
+          <article><b>Freelance / Coderaxo</b><span>Web products · SEO · client solutions</span></article>
+        </div>
+        <div>
+          <h4>Core</h4>
+          <p>QA · Playwright · Python · OpenCV · YOLO · React · HTML/CSS · MySQL · Product Thinking</p>
+          <h4>Education</h4>
+          <p><b>BS Software Engineering</b><br/>COMSATS University Islamabad, Wah Campus<br/>CGPA 3.89</p>
+        </div>
+      </div>
+      <p class="resume-note">Replace placeholder contact links in <code>index.html</code> before publishing.</p>
+    </div>
+  </dialog>
+
+  <div id="fallback" class="fallback" hidden>
+    <p>3D mode could not start on this device. The story remains fully readable below.</p>
+  </div>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
