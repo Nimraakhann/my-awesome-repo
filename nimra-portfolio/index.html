@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="theme-color" content="#050608" />
-  <meta name="description" content="Nimra Khan — Software Engineer and Software Developer portfolio." />
+  <meta name="theme-color" content="#080808" />
+  <meta name="description" content="Nimra Khan — immersive software engineering portfolio." />
   <title>Nimra Khan — Software Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,235 +13,181 @@
 </head>
 <body>
   <div id="boot" class="boot" aria-live="polite">
-    <div class="boot__top">
-      <span>NK / PORTFOLIO</span>
-      <span id="bootPct">00</span>
-    </div>
-    <div class="boot__line"><span id="bootBar"></span></div>
-    <p id="bootCopy">Loading experience…</p>
+    <div class="boot__brand">NIMRA KHAN / PORTFOLIO</div>
+    <div class="boot__bar"><span id="bootBar"></span></div>
+    <div class="boot__copy" id="bootCopy">Preparing experience…</div>
   </div>
 
-  <canvas id="world" aria-label="Interactive 3D portfolio experience"></canvas>
+  <canvas id="world" aria-label="Interactive 3D career portfolio"></canvas>
 
-  <header class="topbar">
-    <a href="#intro" class="signature" aria-label="Back to beginning">NK</a>
-    <nav class="chapter-nav" aria-label="Portfolio chapters">
-      <button class="chapter-nav__item is-active" data-chapter="0">Intro</button>
-      <button class="chapter-nav__item" data-chapter="1">Foundation</button>
-      <button class="chapter-nav__item" data-chapter="2">ML</button>
-      <button class="chapter-nav__item" data-chapter="3">Retail Vista</button>
-      <button class="chapter-nav__item" data-chapter="4">Cybercom</button>
-      <button class="chapter-nav__item" data-chapter="5">QA</button>
-      <button class="chapter-nav__item" data-chapter="6">Archive</button>
+  <header class="hud">
+    <a class="mark" href="#intro" aria-label="Back to beginning"><span>N</span><span>K</span></a>
+    <nav class="hud__nav" aria-label="Portfolio chapters">
+      <button class="hud__dot is-active" data-chapter="0"><span>01</span><b>Intro</b></button>
+      <button class="hud__dot" data-chapter="1"><span>02</span><b>Foundation</b></button>
+      <button class="hud__dot" data-chapter="2"><span>03</span><b>ML</b></button>
+      <button class="hud__dot" data-chapter="3"><span>04</span><b>Retail Vista</b></button>
+      <button class="hud__dot" data-chapter="4"><span>05</span><b>Cybercom</b></button>
+      <button class="hud__dot" data-chapter="5"><span>06</span><b>QA</b></button>
+      <button class="hud__dot" data-chapter="6"><span>07</span><b>Freelance</b></button>
+      <button class="hud__dot" data-chapter="7"><span>08</span><b>Contact</b></button>
     </nav>
-    <button class="sound" id="soundToggle" type="button" aria-pressed="false">Sound off</button>
+    <button id="soundToggle" class="icon-btn" type="button" aria-pressed="false" title="Ambient sound">◌</button>
   </header>
 
   <main id="story">
-    <section class="chapter chapter--intro" id="intro" data-chapter="0">
-      <div class="chapter__copy chapter__copy--hero">
+    <section id="intro" class="chapter chapter--hero" data-chapter="0">
+      <div class="chapter__content hero-copy">
         <p class="eyebrow">SOFTWARE ENGINEER · SOFTWARE DEVELOPER</p>
-        <h1>Nimra<br>Khan</h1>
-        <p class="hero-line">Software engineering across <span>development</span>, <span>computer vision</span> and <span>quality engineering</span>.</p>
+        <h1>Nimra Khan</h1>
+        <p class="lede">Software engineering, computer vision and product quality — presented as one continuous engineering story.</p>
         <div class="hero-actions">
-          <button class="btn btn--primary" data-go="1">Enter the work</button>
-          <button class="btn btn--quiet" data-open="resume">Quick résumé</button>
+          <button class="primary" data-go="1">Enter portfolio <span>↘</span></button>
+          <button class="ghost" data-open="resume">Quick résumé</button>
         </div>
+        <div class="scroll-note"><span></span>Scroll to move through the timeline</div>
       </div>
-      <div class="intro-meta">
-        <span>Islamabad, Pakistan</span>
-        <span>Scroll to move through the timeline</span>
-      </div>
+      <aside class="chapter__meta">
+        <span>ISLAMABAD, PAKISTAN</span>
+        <span>PYTHON · REACT · DJANGO · SQL · QA · COMPUTER VISION</span>
+      </aside>
     </section>
 
     <section class="chapter" data-chapter="1">
-      <div class="chapter__copy">
-        <div class="section-index">01</div>
-        <p class="eyebrow">FOUNDATION · 2021–2025</p>
-        <h2>Engineering<br>before specialization.</h2>
-        <p class="body">A BS in Software Engineering gave me the base I still use everywhere: programming, frontend work, backend systems, databases, object-oriented thinking and product-level problem solving.</p>
-        <div class="stat-strip">
-          <button data-panel="education"><strong>3.89 / 4.00</strong><span>CGPA</span></button>
-          <button data-panel="education"><strong>Gold Medalist</strong><span>BS Software Engineering</span></button>
-          <button data-panel="education"><strong>COMSATS</strong><span>Islamabad · Wah Campus</span></button>
+      <div class="chapter__content">
+        <p class="eyebrow">2021 — 2025 / FOUNDATION</p>
+        <h2>A software engineering<br/>foundation first.</h2>
+        <p class="body-copy">BS Software Engineering from COMSATS University Islamabad, with a 3.89 / 4.00 CGPA and Gold Medalist distinction. The foundation spans programming, frontend, backend, databases, object-oriented programming and software practices.</p>
+        <div class="facts">
+          <button class="fact" data-panel="education"><span>Degree</span><strong>BS Software Engineering</strong></button>
+          <button class="fact" data-panel="education"><span>CGPA</span><strong>3.89 / 4.00</strong></button>
+          <button class="fact" data-panel="education"><span>Distinction</span><strong>Gold Medalist</strong></button>
         </div>
-      </div>
-      <div class="scene-caption">
-        <span>SCENE 01</span>
-        <p>Layered architecture: code, interface, data and systems.</p>
       </div>
     </section>
 
     <section class="chapter" data-chapter="2">
-      <div class="chapter__copy chapter__copy--right">
-        <div class="section-index">02</div>
-        <p class="eyebrow">MACHINE LEARNING INTERN · JUL–SEP 2024</p>
-        <h2>Training systems<br>to recognize the world.</h2>
-        <p class="body">At Codic Solution I implemented YOLOv8m object detection in Python, annotated training data, tuned the model and evaluated how well it generalized.</p>
-        <div class="metrics metrics--3">
+      <div class="chapter__content chapter__content--right">
+        <p class="eyebrow">JUL — SEP 2024 / MACHINE LEARNING INTERN</p>
+        <h2>First, I trained<br/>systems to detect.</h2>
+        <p class="body-copy">At Codic Solution, I implemented YOLOv8m object detection in Python, annotated data, trained and tuned the model, and evaluated performance using mAP metrics.</p>
+        <div class="metric-grid">
           <div><strong>94.4%</strong><span>mAP@50</span></div>
           <div><strong>76.1%</strong><span>mAP@50–95</span></div>
-          <div><strong>YOLOv8m</strong><span>Python · detection</span></div>
+          <div><strong>YOLOv8m</strong><span>Object detection</span></div>
+          <div><strong>Python</strong><span>Training pipeline</span></div>
         </div>
-        <button class="btn btn--primary" data-panel="ml">Open experience</button>
-      </div>
-      <div class="scene-caption scene-caption--right">
-        <span>SCENE 02</span>
-        <p>Data points flow through training, tuning and evaluation.</p>
+        <button class="primary" data-panel="ml">View ML internship <span>＋</span></button>
       </div>
     </section>
 
     <section class="chapter" data-chapter="3">
-      <div class="chapter__copy">
-        <div class="section-index">03</div>
-        <p class="eyebrow">RETAIL VISTA · SEP 2024–MAY 2025</p>
-        <h2>A computer-vision<br>system became a product.</h2>
-        <p class="body">Retail Vista brought data collection, model-training support and frontend development together in one smart-retail analytics platform.</p>
-        <div class="metrics">
+      <div class="chapter__content">
+        <p class="eyebrow">SEP 2024 — MAY 2025 / RETAIL VISTA</p>
+        <h2>Then detection became<br/>a complete product.</h2>
+        <p class="body-copy">Retail Vista is an end-to-end smart retail analytics platform. My work covered data collection and labelling, model-training support, React frontend development and integration with a Django + MySQL backend.</p>
+        <div class="metric-grid">
           <div><strong>89.6%</strong><span>Shoplifting mAP@50</span></div>
           <div><strong>86.3%</strong><span>Precision</span></div>
           <div><strong>84.0%</strong><span>Recall</span></div>
           <div><strong>~93%</strong><span>Demographic CNN</span></div>
         </div>
         <div class="tag-row">
-          <span>Shoplifting detection</span>
-          <span>People counting</span>
-          <span>Demographic analysis</span>
-          <span>Promotions</span>
-          <span>MappedIn store maps</span>
+          <span>Shoplifting Detection</span><span>People Counting</span><span>Demographics</span><span>Promotions</span><span>MappedIn</span>
         </div>
         <div class="hero-actions">
-          <button class="btn btn--primary" data-panel="retail">Full case study</button>
-          <a class="btn btn--quiet" href="https://github.com/Nimraakhann/retail-vista" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <button class="primary" data-panel="retail">Full project case study <span>＋</span></button>
+          <a class="ghost" href="https://github.com/Nimraakhann/retail-vista" target="_blank" rel="noreferrer">GitHub ↗</a>
         </div>
-      </div>
-      <div class="scene-caption">
-        <span>SCENE 03</span>
-        <p>A live retail-map installation: tracks, zones, detections and analytics.</p>
       </div>
     </section>
 
     <section class="chapter" data-chapter="4">
-      <div class="chapter__copy chapter__copy--right">
-        <div class="section-index">04</div>
-        <p class="eyebrow">SOFTWARE ENGINEERING INTERN · OCT–DEC 2025</p>
-        <h2>Interfaces, dashboards<br>and delivery.</h2>
-        <p class="body">At Cybercom I developed responsive frontend interfaces, designed UI layouts in Figma, built Power BI dashboards and prepared technical and functional documentation.</p>
+      <div class="chapter__content chapter__content--right">
+        <p class="eyebrow">OCT — DEC 2025 / SOFTWARE ENGINEERING INTERN</p>
+        <h2>Back into product<br/>and interface engineering.</h2>
+        <p class="body-copy">At Cybercom, I developed responsive frontend interfaces, created UI layouts in Figma, built Power BI dashboards and prepared technical and functional documentation for delivery.</p>
         <div class="tag-row">
-          <span>Responsive frontend</span>
-          <span>Figma</span>
-          <span>Power BI</span>
-          <span>Technical documentation</span>
+          <span>Responsive Frontend</span><span>Figma</span><span>Power BI</span><span>Documentation</span>
         </div>
-        <button class="btn btn--primary" data-panel="cybercom">Open experience</button>
-      </div>
-      <div class="scene-caption scene-caption--right">
-        <span>SCENE 04</span>
-        <p>An interface studio of grids, panels and reporting surfaces.</p>
+        <button class="primary" data-panel="cybercom">View Cybercom work <span>＋</span></button>
       </div>
     </section>
 
     <section class="chapter" data-chapter="5">
-      <div class="chapter__copy">
-        <div class="section-index">05</div>
-        <p class="eyebrow">QA ENGINEER · JAN 2026–PRESENT</p>
-        <h2>Now I work at the point<br>where product behavior matters.</h2>
-        <p class="body">At Citrusbits I test web, mobile and desktop behavior, validate APIs with Postman, track defects in Jira and work with developers to reproduce issues and verify fixes inside Agile Scrum sprints.</p>
+      <div class="chapter__content">
+        <p class="eyebrow">JAN 2026 — PRESENT / QA ENGINEER</p>
+        <h2>Now I test<br/>how products behave.</h2>
+        <p class="body-copy">At Citrusbits, I test web, mobile and desktop application behavior, validate APIs with Postman, track defects in Jira, reproduce issues with developers and verify fixes during Agile Scrum sprints.</p>
         <div class="tag-row">
-          <span>Web</span>
-          <span>Mobile</span>
-          <span>Desktop</span>
-          <span>Postman</span>
-          <span>Jira</span>
-          <span>Agile Scrum</span>
+          <span>Web</span><span>Mobile</span><span>Desktop</span><span>Postman</span><span>Jira</span><span>Agile Scrum</span>
         </div>
-        <button class="btn btn--primary" data-panel="qa">Open QA experience</button>
-      </div>
-      <div class="scene-caption">
-        <span>SCENE 05</span>
-        <p>A verification chamber: devices, API traffic, issues and retest paths.</p>
+        <button class="primary" data-panel="qa">View QA experience <span>＋</span></button>
       </div>
     </section>
 
-    <section class="chapter chapter--archive" data-chapter="6">
-      <div class="chapter__copy chapter__copy--right">
-        <div class="section-index">06</div>
-        <p class="eyebrow">EARLIER WORK · CERTIFICATIONS · CONTACT</p>
-        <h2>The rest of the<br>engineering story.</h2>
-        <p class="body">Earlier freelance work included interactive Jotform forms, website and operational work, and data-entry projects for international clients. I also continue building skills through focused certifications.</p>
-        <div class="archive-grid">
-          <button data-panel="freelance">
-            <span>Earlier freelance</span>
-            <strong>Fiverr · Pure Oxygen Therapy UK</strong>
-          </button>
-          <button data-panel="certs">
-            <span>Learning</span>
-            <strong>Google · Coursera · Johns Hopkins</strong>
-          </button>
-          <button data-open="resume">
-            <span>Recruiter view</span>
-            <strong>Quick résumé</strong>
-          </button>
+    <section class="chapter" data-chapter="6">
+      <div class="chapter__content chapter__content--right">
+        <p class="eyebrow">ADDITIONAL EXPERIENCE / FREELANCE</p>
+        <h2>Client work taught me<br/>delivery and ownership.</h2>
+        <p class="body-copy">Freelance work for Fiverr clients and Pure Oxygen Therapy UK included interactive Jotform forms, website and operational tasks, and data-entry projects for international clients.</p>
+        <div class="tag-row">
+          <span>Jotform</span><span>Website Tasks</span><span>Operations</span><span>Data Entry</span><span>International Clients</span>
         </div>
-        <div class="contact-list">
-          <a href="mailto:nimrakhan0783@gmail.com">nimrakhan0783@gmail.com ↗</a>
-          <a href="https://linkedin.com/in/nimra-khan-b92a05282" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-          <a href="https://github.com/Nimraakhann" target="_blank" rel="noreferrer">GitHub ↗</a>
-          <a href="tel:+923062577493">+92 306 2577493</a>
-        </div>
+        <button class="primary" data-panel="freelance">View freelance work <span>＋</span></button>
       </div>
-      <div class="scene-caption scene-caption--right">
-        <span>SCENE 06</span>
-        <p>An archive wall that closes the timeline without turning it into a résumé page.</p>
+    </section>
+
+    <section class="chapter chapter--final" data-chapter="7">
+      <div class="chapter__content final-copy">
+        <p class="eyebrow">NEXT</p>
+        <h2>Software engineering<br/>with range.</h2>
+        <p class="body-copy">Python, JavaScript, React.js, Django, MySQL, Postman, Jira, Power BI and computer vision — connected by the same mindset: understand the system, build carefully and verify what actually works.</p>
+        <div class="contact-grid">
+          <a href="mailto:nimrakhan0783@gmail.com">Email <span>↗</span></a>
+          <a href="https://linkedin.com/in/nimra-khan-b92a05282" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
+          <a href="https://github.com/Nimraakhann" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+          <button data-open="resume">Quick résumé <span>↗</span></button>
+        </div>
       </div>
     </section>
   </main>
 
-  <aside class="timeline-rail" aria-hidden="true">
-    <span id="railProgress"></span>
-  </aside>
-  <div class="chapter-marker" id="chapterMarker"><span>00</span><b>Intro</b></div>
-  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div id="chapterLabel" class="chapter-label"><span>01</span><b>Intro</b></div>
+  <div id="progress" class="progress"><span></span></div>
+  <div id="cursor" class="cursor" aria-hidden="true"><span></span></div>
 
-  <dialog id="panel" class="modal">
-    <button class="modal__close" id="panelClose" aria-label="Close">×</button>
+  <dialog id="panel" class="panel">
+    <button id="panelClose" class="panel__close" aria-label="Close">×</button>
     <div id="panelInner"></div>
   </dialog>
 
-  <dialog id="resume" class="modal modal--resume">
-    <button class="modal__close" id="resumeClose" aria-label="Close">×</button>
+  <dialog id="resume" class="panel panel--resume">
+    <button id="resumeClose" class="panel__close" aria-label="Close">×</button>
     <div class="resume-sheet">
-      <div class="resume-sheet__top">
-        <div>
-          <p class="eyebrow">QUICK RÉSUMÉ</p>
-          <h3>Nimra Khan</h3>
-          <p>Software Engineer | Software Developer</p>
-        </div>
-        <div class="resume-sheet__contact">
-          <span>Islamabad, Pakistan</span>
-          <span>nimrakhan0783@gmail.com</span>
-          <span>github.com/Nimraakhann</span>
-        </div>
+      <div class="resume-head">
+        <div><p class="eyebrow">QUICK RÉSUMÉ</p><h3>Nimra Khan</h3></div>
+        <span>Software Engineer · Software Developer</span>
       </div>
-      <div class="resume-sheet__grid">
-        <section>
+      <div class="resume-cols">
+        <div>
           <h4>Experience</h4>
-          <article><b>QA Engineer · Citrusbits</b><span>Jan 2026 – Present</span><p>Web, mobile and desktop testing; Postman API validation; Jira defect tracking; reproduction and fix verification in Agile Scrum.</p></article>
-          <article><b>Software Engineering Intern · Cybercom</b><span>Oct 2025 – Dec 2025</span><p>Responsive frontend interfaces, Figma UI layouts, Power BI dashboards and technical documentation.</p></article>
-          <article><b>Machine Learning Intern · Codic Solution</b><span>Jul 2024 – Sep 2024</span><p>YOLOv8m object detection, data annotation, training and tuning to 94.4% mAP@50.</p></article>
-        </section>
-        <section>
+          <article><b>QA Engineer · Citrusbits</b><span>Jan 2026 – Present · Web, mobile, desktop, Postman, Jira</span></article>
+          <article><b>Software Engineering Intern · Cybercom</b><span>Oct 2025 – Dec 2025 · Frontend, Figma, Power BI</span></article>
+          <article><b>Machine Learning Intern · Codic Solution</b><span>Jul 2024 – Sep 2024 · YOLOv8m object detection</span></article>
+        </div>
+        <div>
           <h4>Education</h4>
-          <p><b>BS Software Engineering</b><br>COMSATS University Islamabad<br>CGPA 3.89 / 4.00 · Gold Medalist</p>
-          <h4>Core skills</h4>
-          <p>Python · JavaScript · HTML · CSS · SQL · React.js · Django · MySQL · Git · GitHub · Jira · Postman · Power BI · PyTorch · TensorFlow/Keras · OpenCV · YOLOv8m · YOLOv11</p>
-        </section>
+          <p><b>BS Software Engineering</b><br/>COMSATS University Islamabad<br/>CGPA 3.89 / 4.00 · Gold Medalist</p>
+          <h4>Core</h4>
+          <p>Python · JavaScript · React.js · Django · MySQL · Git · Jira · Postman · Power BI · PyTorch · TensorFlow/Keras · OpenCV · YOLO</p>
+        </div>
       </div>
     </div>
   </dialog>
 
-  <div class="fallback" id="fallback" hidden>
-    3D rendering is unavailable on this device. The portfolio content remains fully accessible.
+  <div id="fallback" class="fallback" hidden>
+    <p>3D mode could not start on this device. The portfolio remains fully readable.</p>
   </div>
 
   <script type="module" src="./app.js"></script>
